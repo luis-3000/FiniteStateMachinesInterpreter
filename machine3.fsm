@@ -1,0 +1,11 @@
+machine3.fsm
+
+INPUT_ALPHABET :  (0{1})|{+?|-?(|n{1}|d*)
+
+STARTING_STATE : S1
+
+S1: S2:{+,-} S3:{|n} S5:{0} 
+S2: S3:{|n}
+S3$: S4:{|d} 
+S4$!: S4:{|d*}
+s5$!:

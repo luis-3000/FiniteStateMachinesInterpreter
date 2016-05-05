@@ -1,0 +1,9 @@
+test.fsm
+
+INPUT_ALPHABET : (0{1})|(|n{1}|d*)
+STARTING_STATE : S1
+
+S1: S2:{0{1}} S3:{|n{1}}
+S2!:
+S3$: S4:{|d*}
+S4!:

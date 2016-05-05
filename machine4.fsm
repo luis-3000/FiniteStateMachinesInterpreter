@@ -1,0 +1,12 @@
+machine4.fsm
+
+INPUT_ALPHABET : (^[a-zA-Z0-9!@#%/&*-+{}().,]*olivia[a-zA-Z0-9!@#%/&*-+{}().,]*$
+STARTING_STATE : S1
+
+S1: S2:{o} S1:{[^o]}
+S2: S3:{l} S1:{[^l]}
+S3: S4:{i} S1:{[^i]}
+S4: S5:{v} S1:{[^v]}
+S5: S6:{i} S1:{[^i]}
+S6: S7:{a} S1:{[^a]}
+S7$!:
